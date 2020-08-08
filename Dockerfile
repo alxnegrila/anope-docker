@@ -21,7 +21,7 @@ RUN apk add --no-cache --virtual .build-utils gcc g++ make git cmake gnutls-dev 
     ln -s /src/anope/modules/extra/m_ssl_gnutls.cpp modules && \
     ln -s /src/anope/modules/extra/m_mysql.cpp modules && \
     ln -s /src/anope/modules/extra/m_sqlite.cpp modules && \
-    ln -s /src/anope-modules/modules/* modules && \
+    ln -s /src/anope-modules/modules/* modules/third && \
     mkdir build && \
     cd /src/anope/build && \
     cmake -DINSTDIR=/anope/ -DDEFUMASK=077 -DCMAKE_BUILD_TYPE=RELEASE .. && \
