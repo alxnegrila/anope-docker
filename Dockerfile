@@ -20,7 +20,8 @@ RUN apk add --no-cache --virtual .build-utils gcc g++ make git cmake gnutls-dev 
     # Add and overwrite modules
     ln -s /src/anope/modules/extra/m_ssl_gnutls.cpp modules && \
     ln -s /src/anope/modules/extra/m_mysql.cpp modules && \
-    ln -s /src/anope/modules/extra/m_sqlite.cpp modules && \
+    # ln -s /src/anope/modules/extra/m_sqlite.cpp modules && \
+    # Add the thirdparty modules 
     ln -s /src/anope-modules/modules/* modules/third && \
     mkdir build && \
     cd /src/anope/build && \
