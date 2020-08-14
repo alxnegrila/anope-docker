@@ -45,7 +45,7 @@ RUN chown -R anope /anope/conf/
 
 WORKDIR /anope/
 
-VOLUME /data/
+VOLUME ["/data/", "/anope/"]
 
 USER anope
 
