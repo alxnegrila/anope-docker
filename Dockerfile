@@ -15,7 +15,7 @@ RUN apk add --no-cache --virtual .build-utils gcc g++ make git cmake gnutls-dev 
     cd /src && \
     # Clone the requested version
     git clone --depth 1 https://github.com/anope/anope.git anope -b $VERSION && \
-    git clone --depth 1 https://github.com/rgraff/anope-modules anope-modules && \ 
+    git clone --depth 1 https://github.com/alxnegrila/anope-modules anope-modules && \ 
     cd /src/anope && \
     # Add and overwrite modules
     ln -s /src/anope/modules/extra/m_ssl_gnutls.cpp modules && \
