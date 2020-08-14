@@ -1,7 +1,7 @@
 Anope
 ===
 
-[![Build Status](https://travis-ci.org/Adam-/anope-docker.svg?branch=master)](https://travis-ci.org/Adam-/anope-docker)
+[![Build Status](https://travis-ci.org/alxnegrila/anope-docker.svg?branch=master)](https://travis-ci.org/alxnegrila/anope-docker)
 
 Anope is a set of IRC Services designed for flexibility and ease of use.
 
@@ -12,7 +12,7 @@ Anope is a set of Services for IRC networks that allows users to manage their ni
 
 This image is not usable as stand alone image. You need some kind of IRCd.
 
-For example you can use [InspIRCd](https://hub.docker.com/r/inspircd/inspircd-docker) like in the [example](https://github.com/Adam-/anope-docker/blob/master/examples/docker-compose.yml).
+For example you can use [InspIRCd](https://hub.docker.com/r/inspircd/inspircd-docker) like in the [example](https://github.com/alxnegrila/anope-docker/blob/master/examples/docker-compose.yml).
 
 The minimal configuration looks like this:
 
@@ -40,7 +40,7 @@ Use the following environment variables to configure your container:
 |`ANOPE_UPLINK_IP`        |no default                      |DNS name or IP of the uplink host           |
 |`ANOPE_UPLINK_PORT`      |`7000`                          |Port used to connect to uplink host         |
 |`ANOPE_UPLINK_PASSWORD`  |no default                      |Password used to authenticate against uplink|
-
+|`ANOPE_CASEMAP`          |`rfc1459`                       |Casemap rfc1459/ascii                       |
 
 ## Database configuration
 
@@ -59,7 +59,7 @@ $ docker run --name anope -v "/path/to/datastore:/data" -e "ANOPE_UPLINK_IP=irc.
 
 ### MySQL
 
-For a production setup MySQL is the recommended way to set this image up. Checkout the [example](https://github.com/Adam-/anope-docker/blob/master/examples/docker-compose.yml) if you want to test it.
+For a production setup MySQL is the recommended way to set this image up. Checkout the [example](https://github.com/alxnegrila/anope-docker/blob/master/examples/docker-compose.yml) if you want to test it.
 
 |Available variables      |Default value                   |Description                                 |
 |-------------------------|--------------------------------|--------------------------------------------|
@@ -101,7 +101,7 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Adam-/anope-docker/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/alxnegrila/anope-docker/issues).
 
 You can also reach many of the project maintainers via the `#anope` IRC channel on [Teranova](http://www.teranova.net/).
 
